@@ -1,264 +1,43 @@
-<h1>This is the Index page (calendar)</h1>
+<h1>Fitness Class Calendar</h1>
 
-<% @fitness_classes.each do |appointment| %>
-  <div class="appointment">
-  <h3 class="appointment-name"><%=appointment.name %></h3>
-  </div>
-<%end%>
+<% days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]%>
 
 <table>
-<thead>
+  <thead>
     <tr>
-      <th>Time</th>
-      <th>Sunday</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-      <th>Saturday</th>
+      <% days.each do |day| %> 
+        <th><%= day %></th>
+      <% end %> 
     </tr>
-    </thead>
-    
-      <tr id="12 AM">
-        <td>12:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>3:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>4:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>5:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>6:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>7:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>8:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>9:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>10:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>11:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>12:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>3:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>4:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>5:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>6:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>7:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>8:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
-      <tr>
-        <td>9:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
-      <tr>
-        <td>10:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
-      <tr>
-        <td>11:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        </tr>
-        <tr>
+  </thead> 
+
+  <tbody>
+      <% days.each do |day| %>
+    <td>
+        <% @fitness_classes.select {|fc| fc.day_of_week.downcase == day.downcase }.sort_by(&:start_time).each do |fc| %>
+            <% if fc.end_time.hour - fc.start_time.hour == 1 %> 
+              <div class="fitness-class-1">
+                <div class="text-content">
+                  <p><%= fc.start_time.strftime("%I:%M:%p") %> </p>
+                  <h5><%= fc.name %></h5>
+                  <p><%= fc.end_time.strftime("%I:%M:%p") %> </p>
+                </div>
+              </div>
+            <% elsif fc.end_time.hour - fc.start_time.hour == 2 %>
+              <div class="fitness-class-2">
+              <p><%= fc.start_time.strftime("%I:%M:%p") %> </p>
+              <h5><%= fc.name %></h5>
+              <p><%= fc.end_time.strftime("%I:%M:%p") %> </p>
+            </div>
+            <% elsif fc.end_time.hour - fc.start_time.hour == 3 %>
+            <div class="fitness-class-3">
+            <p><%= fc.start_time.strftime("%I:%M:%p") %> </p>
+            <h5><%= fc.name %></h5>
+            <p><%= fc.end_time.strftime("%I:%M:%p") %> </p>
+          </div>
+            <% end %>
+        <% end %>
+    </td>
+      <% end %> 
+  </tbody> 
 </table>

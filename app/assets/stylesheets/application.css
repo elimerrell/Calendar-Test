@@ -29,15 +29,38 @@ td {
   padding: 2px;
 }
 
-.appointment {
-  width: 70px;
-  height: 70px;
-  background-color: green;
+.fitness-class-1 {
+  padding: 10px;
+  background-color: rgb(55, 152, 55);
   text-align: center;
   margin: 10px;
-  margin: auto;
+  height: 130px;
+  overflow: auto;
 }
 
-.appointment-text {
-  display: inline-block;
+.fitness-class-2 {
+  padding: 10px;
+  background-color: rgb(55, 152, 55);
+  text-align: center;
+  margin: 10px;
+  height: 160px;
+  overflow: auto;
+}
+
+.fitness-class-3 {
+  padding: 10px;
+  background-color: rgb(55, 152, 55);
+  text-align: center;
+  margin: 10px;
+  height: 200px;
+  overflow: auto;
+}
+
+.text-content {
+  display: block;
+}
+
+h5 {
+  color: white;
+  font-size: 20px;
 }
