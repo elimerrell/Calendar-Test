@@ -2,7 +2,7 @@
 
 <%= form_for @fitness_class do |f| %>
 Name: <%= f.text_field :name %><br />
-Day : <%= f.text_field :day_of_week %><br />
+Day : <%= f.select :day_of_week, [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ], :prompt => 'Select Day' %><br />
 Start Time : <%= f.time_select :start_time, { ampm: true, prompt: true,
 prompt: { hour: "Choose hr" }} %><br />
 End Time: <%= f.time_select :end_time, {ampm: true, prompt: true,
