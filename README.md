@@ -24,4 +24,6 @@
 
 #METHOD 2
 
-#
+#Create a calendar with weekday headings and display divs for classes that match that day. Sort by the time the class begins so that early classes appear first. Make different sized divs (height) depending on the difference between the end time of the class and the start time.
+
+#I was unable to get all hours of the day on the left side of the table and match classes to their corresponding times. This would require giving each time an id and targeting the time slots with JavaScript document selectors.
