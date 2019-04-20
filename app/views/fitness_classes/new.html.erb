@@ -1,0 +1,10 @@
+<h1>New Fitness class Form</h1>
+
+<%= form_for @fitness_class do |f| %>
+Name: <%= f.text_field :name %><br />
+Day : <%= f.text_field :day_of_week %><br />
+Start Time : <%= f.time_select :start_time, { ampm: true, prompt: true,
+prompt: { hour: "Choose hr" }} %><br />
+End Time: <%= f.time_select :end_time, {ampm: true, prompt: true,
+prompt: { hour: "Choose hr" }}%><br />
+<%= f.submit %> <% end %>
